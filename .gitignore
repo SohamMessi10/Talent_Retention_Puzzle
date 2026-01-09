@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ds_env/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Data (keep folder structure, ignore large/raw files)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# If you want to version the dataset, remove the ignores above.
+
+# Outputs
+outputs/*
+!outputs/.gitkeep
+
+# Logs
+*.log
