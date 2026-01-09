@@ -1,94 +1,123 @@
-# The Talent Retention Puzzle
-## Uncovering the Hidden Drivers of Employee Attrition
-
-### A Hypothesis-Driven Exploratory Data Analysis
-
----
-
-## 📋 Project Overview
-
-This project presents a comprehensive, portfolio-grade exploratory data analysis (EDA) that diagnoses the root causes of employee attrition. Moving beyond surface-level analysis, this project adopts a **hypothesis-driven approach** to systematically test competing explanations and deliver actionable recommendations.
-
-### The Business Problem
-
-Over the past 12 months, our Engineering and Sales departments have experienced elevated resignation rates. Exit interviews provide vague explanations—"better opportunities" and "burnout"—leaving leadership uncertain about how to respond.
-
-**Central Question:** *Is employee attrition primarily driven by compensation, or are deeper cultural, managerial, and environmental factors at play?*
+# The Talent Retention Puzzle  
+### Uncovering the Hidden Drivers of Employee Attrition  
+*A Hypothesis-Driven Exploratory Data Analysis*
 
 ---
 
-## 🎯 Key Findings
+## Project Overview
+
+This project presents a **portfolio-grade exploratory data analysis (EDA)** that diagnoses the root causes of employee attrition. Moving beyond surface-level correlations, the analysis adopts a **hypothesis-driven framework** to systematically evaluate competing explanations and translate insights into **actionable retention strategies**.
+
+---
+
+## The Business Problem
+
+Over the past 12 months, the Engineering and Sales departments have experienced **elevated resignation rates**. Exit interviews cite vague explanations—*“better opportunities”* and *“burnout”*—leaving leadership without clear direction on how to respond.
+
+**Central Question:**  
+> *Is employee attrition primarily driven by compensation, or are deeper cultural, managerial, and environmental factors at play?*
+
+---
+
+## Key Findings
 
 ### Hypothesis Testing Results
 
 | Hypothesis | Evidence | Verdict |
-|------------|----------|---------|
-| **H1: Compensation** | Income gap exists but moderate; stock options show strong protective effect | ⚠️ Partial Support |
-| **H2: Burnout** | Overtime is top predictor; work-life balance critical; combined effects multiplicative | ✅ Strong Support |
-| **H3: Environment** | Environment satisfaction matters; manager tenure helps; secondary to workload | 📊 Moderate Support |
+|---------|--------|--------|
+| **H1: Compensation** | Income gaps exist but are moderate; stock options show a strong protective effect | ⚠️ Partial Support |
+| **H2: Burnout** | Overtime is the strongest predictor; work-life balance is critical; effects are multiplicative | ✅ Strong Support |
+| **H3: Environment** | Relationship satisfaction and manager tenure matter; secondary to workload | 📊 Moderate Support |
+
+---
 
 ### Critical Insights
 
-1. **Burnout is the #1 Driver**: Employees working overtime are **2x+ more likely** to leave
-2. **Stock Options are Protective**: Moving from 0 to 1 stock options has the biggest retention impact
-3. **First-Year Employees are Vulnerable**: ~25% higher attrition than average
-4. **Interactions Matter**: Overtime + No Stock Options = **35%+ attrition rate**
-5. **Sales Department Needs Attention**: Highest attrition + promotion sensitivity
+- **Burnout is the #1 Driver**  
+  Employees working overtime are **2× more likely to leave** than those without overtime.
+
+- **Stock Options Are Highly Protective**  
+  The transition from **0 → 1 stock option** yields the single largest reduction in attrition risk.
+
+- **First-Year Employees Are Most Vulnerable**  
+  Attrition among employees with <1 year tenure is **~25% higher than average**.
+
+- **Interactions Matter**  
+  Employees with **overtime + no stock options** experience **35%+ attrition rates**.
+
+- **Sales Department Requires Immediate Attention**  
+  Highest attrition overall and heightened sensitivity to promotion stagnation.
+
+---
 
 ### Counterintuitive Findings
 
-- **Distance from home affects juniors more than seniors** - Senior employees are "anchored" by relationships and institutional knowledge
-- **Promotion stagnation hits Sales harder than R&D** - Sales roles are more externally benchmarked
-- **Stock options have diminishing returns** - The 0→1 transition provides the biggest impact
+- **Commute Distance Affects Junior Employees More Than Seniors**  
+  Senior employees appear “anchored” by institutional knowledge and internal networks.
+
+- **Promotion Stagnation Impacts Sales More Than R&D**  
+  Sales roles are more externally benchmarked and opportunity-sensitive.
+
+- **Stock Options Exhibit Diminishing Returns**  
+  The **initial grant** provides the largest marginal retention benefit.
 
 ---
 
 ## 📊 The Analysis
 
 ### Dataset
-- **Source**: IBM HR Analytics Employee Attrition Dataset
-- **Size**: 1,470 employees × 35 features
-- **Target**: Attrition (Yes/No)
+- **Source:** IBM HR Analytics Employee Attrition Dataset  
+- **Size:** 1,470 employees × 35 features  
+- **Target Variable:** Attrition (Yes / No)
 
 ### Methodology
-
-1. **Problem Framing**: Defined attrition risk and identified high-value employee segments
-2. **Data Preparation**: Quality assessment, feature engineering, cohort creation
-3. **Hypothesis Testing**: Systematically tested compensation, burnout, and environment hypotheses
-4. **Feature Interactions**: Identified compound risk factors
-5. **Risk Profiling**: Created composite risk scores for targeted intervention
-6. **Recommendations**: Developed data-backed retention strategies
+- **Problem Framing:** Defined attrition risk and prioritized high-value employee segments  
+- **Data Preparation:** Quality assessment, feature engineering, cohort creation  
+- **Hypothesis Testing:** Systematic evaluation of compensation, burnout, and environment drivers  
+- **Feature Interaction Analysis:** Identification of compound risk factors  
+- **Risk Profiling:** Composite risk scoring for targeted intervention  
+- **Synthesis:** Translation of insights into retention strategy recommendations  
 
 ---
 
-## 💡 Strategic Recommendations
+## Strategic Recommendations
 
 ### Recommendation 1: Overtime Management Program
-- Implement mandatory overtime caps (40 hrs OT/month max)
-- Hire additional headcount in high-OT departments
-- Provide comp time for unavoidable overtime
-- **Estimated Impact**: ~15-20 fewer departures annually
+- Implement mandatory overtime caps (≤40 hours/month)  
+- Add headcount in chronic high-overtime teams  
+- Offer comp time for unavoidable overtime  
 
-### Recommendation 2: Universal Stock Option Program
-- Extend stock option eligibility to all FTEs
-- Focus on Level 0 → 1 transition (biggest impact)
-- Consider RSUs for non-exempt employees
-- **Estimated Impact**: ~10-15 fewer departures annually
-
-### Recommendation 3: New Hire Retention Program
-- 90-day structured onboarding program
-- Mandatory mentor assignment for all new hires
-- 30/60/90 day check-ins with skip-level manager
-- Remote/hybrid flexibility for long-commute employees
-- **Estimated Impact**: ~5-10 fewer departures annually
-
-### Total Expected Impact
-- **Projected attrition reduction**: 25-35%
-- **Estimated annual savings**: $500K-$1M+ in replacement costs
+**Estimated Impact:** ~15–20 fewer departures annually  
 
 ---
 
-## 📁 Repository Structure
+### Recommendation 2: Universal Stock Option Program
+- Extend stock option eligibility to all full-time employees  
+- Prioritize **0 → 1** option grants (highest marginal impact)  
+- Consider RSUs for non-exempt roles  
+
+**Estimated Impact:** ~10–15 fewer departures annually  
+
+---
+
+### Recommendation 3: New Hire Retention Program
+- Structured 90-day onboarding program  
+- Mandatory mentor assignment for all new hires  
+- 30 / 60 / 90-day check-ins with skip-level managers  
+- Hybrid or remote flexibility for long-commute employees  
+
+**Estimated Impact:** ~5–10 fewer departures annually  
+
+---
+
+### Total Expected Impact
+
+- **Projected Attrition Reduction:** 25–35%  
+- **Estimated Annual Savings:** $500K–$1M+ in replacement and productivity costs  
+
+---
+
+## Repository Structure
 
 ```
 hr_analytics_project/
@@ -107,45 +136,56 @@ hr_analytics_project/
 
 ---
 
-## 🛠️ Technical Stack
+## How to Run This Project
+
+This project is designed to be run as a Jupyter Notebook.
+
+1. Create and activate a Python virtual environment  
+2. Install dependencies from `requirements.txt`  
+3. Add the dataset to `data/raw/`  
+4. Run all cells in `Talent_Retention_Puzzle_Analysis.ipynb`
+
+---
+
+## Technical Stack
 
 - **Python 3.x**
-- **pandas** - Data manipulation
-- **numpy** - Numerical computing
-- **matplotlib** & **seaborn** - Visualization
-- **scipy** - Statistical testing
+- **pandas** — data manipulation  
+- **numpy** — numerical computing  
+- **matplotlib / seaborn** — visualization  
+- **scipy** — statistical testing  
 
 ---
 
-## 📈 Value of the Insights
+## Value of the Insights
 
-This analysis provides:
+This analysis delivers:
 
-1. **Prioritized Understanding**: Clear hierarchy of attrition drivers (burnout > compensation > environment)
-2. **Targeted Interventions**: Specific, actionable recommendations with estimated ROI
-3. **Risk Identification**: Composite scoring system to identify at-risk employees
-4. **Cost Quantification**: Business case for retention investments
-5. **Counterintuitive Insights**: Hidden patterns that challenge conventional assumptions
-
----
-
-## 🔗 Next Steps
-
-1. **Predictive Modeling**: Build ML model to predict individual attrition probability
-2. **Stay Interviews**: Conduct targeted interviews with high-risk employees
-3. **Intervention Tracking**: Implement A/B testing of retention strategies
-4. **Continuous Monitoring**: Build dashboard for real-time attrition tracking
+- **Prioritized understanding** of attrition drivers (burnout > compensation > environment)  
+- **Targeted interventions** with quantifiable business impact  
+- **Risk identification** via composite scoring  
+- **Cost justification** for retention investments  
+- **Counterintuitive insights** that challenge conventional assumptions  
 
 ---
 
-## 👤 Author
+## Next Steps
 
-Data Science Team | HR Analytics Initiative
-
-*This analysis was conducted as part of a strategic workforce planning initiative to improve employee retention and reduce turnover costs.*
+- Build a **predictive attrition model** (ML-based risk scoring)  
+- Conduct **stay interviews** with high-risk employees  
+- Implement **A/B testing** of retention interventions  
+- Develop a **real-time attrition monitoring dashboard**
 
 ---
 
-## 📄 License
+## Author
 
-This project uses the publicly available IBM HR Analytics dataset. Analysis and code are provided for educational and demonstration purposes.
+**Soham Chavan**  
+Undergraduate Student — Data Science  
+Pennsylvania State University
+
+---
+
+## License
+
+This project uses the publicly available IBM HR Analytics dataset. All analysis and code are provided for educational and demonstration purposes.
