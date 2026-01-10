@@ -25,9 +25,9 @@ Over the past 12 months, the Engineering and Sales departments have experienced 
 
 | Hypothesis | Evidence | Verdict |
 |---------|--------|--------|
-| **H1: Compensation** | Income gaps exist but are moderate; stock options show a strong protective effect | ⚠️ Partial Support |
-| **H2: Burnout** | Overtime is the strongest predictor; work-life balance is critical; effects are multiplicative | ✅ Strong Support |
-| **H3: Environment** | Relationship satisfaction and manager tenure matter; secondary to workload | 📊 Moderate Support |
+| **H1: Compensation** | Income gaps exist but are moderate; stock options show a strong protective effect | Partial Support |
+| **H2: Burnout** | Overtime is the strongest predictor; work-life balance is critical; effects are multiplicative | Strong Support |
+| **H3: Environment** | Relationship satisfaction and manager tenure matter; secondary to workload | Moderate Support |
 
 ---
 
@@ -63,7 +63,7 @@ Over the past 12 months, the Engineering and Sales departments have experienced 
 
 ---
 
-## 📊 The Analysis
+## The Analysis
 
 ### Dataset
 - **Source:** IBM HR Analytics Employee Attrition Dataset  
@@ -166,15 +166,6 @@ This analysis delivers:
 - **Risk identification** via composite scoring  
 - **Cost justification** for retention investments  
 - **Counterintuitive insights** that challenge conventional assumptions  
-
----
-
-## Next Steps
-
-- Build a **predictive attrition model** (ML-based risk scoring)  
-- Conduct **stay interviews** with high-risk employees  
-- Implement **A/B testing** of retention interventions  
-- Develop a **real-time attrition monitoring dashboard**
 
 ---
 
