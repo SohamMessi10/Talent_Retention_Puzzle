@@ -2,6 +2,10 @@
 
 An exploratory data analysis project that investigates *why* attrition spiked in **Engineering** and **Sales** over the last 12 months, using hypothesis testing via visualization and feature-interaction analysis.
 
+![Status](https://img.shields.io/badge/Project%20Status-Complete-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 ## Business question
 > Is employee attrition primarily driven by compensation, or are deeper behavioral, managerial, and environmental factors at play?
 
@@ -79,10 +83,16 @@ Insights translated into:
 ## How to run
 This project is designed to be run as a Jupyter Notebook.
 
-1. Create and activate a Python virtual environment  
-2. Install dependencies from `requirements.txt`  
-3. Add the dataset to `data/raw/`  
-4. Run all cells in `notebooks/Talent_Retention_Puzzle_Analysis.ipynb`
+### 1. Clone the Repository
+```bash
+git clone https://github.com/SohamMessi10/Talent_Retention_Puzzle.git
+cd Talent_Retention_Puzzle
+
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+jupyter notebook           # Launch jupyter
 
 ```
 ## Results preview
